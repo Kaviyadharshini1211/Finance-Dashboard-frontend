@@ -27,7 +27,8 @@ src/
 ├── context/
 │   └── AppContext.jsx          # Global state: transactions, role, theme, filters
 ├── data/
-│   └── mockData.js             # 60+ mock transactions + helper functions
+│   └── mockData.js             # 60+ mock transactions + helper functions      
+|   └── mockApi.js              # Simulated REST API with async delays
 ├── pages/
 │   ├── Dashboard/
 │   │   ├── Dashboard.jsx       # Overview page
