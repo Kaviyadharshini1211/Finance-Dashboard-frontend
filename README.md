@@ -2,8 +2,6 @@
 
 A clean, minimal, and interactive personal finance dashboard built with React + Vite.
 
-![FinFlow Dashboard](https://via.placeholder.com/1200x600?text=FinFlow+Finance+Dashboard)
-
 ---
 
 ## 🚀 Tech Stack
@@ -58,10 +56,19 @@ src/
 - **Transactions Page** — Full table with pagination (12/page), multi-field search, filter by type/category/date range, sort by date or amount, row-level edit/delete
 - **Insights Page** — Top spending category, average monthly expense, savings rate analysis, month-over-month comparison with delta %, category breakdown with progress bars, radar chart for spending shape
 
-### Role-Based UI
-Switch roles from the sidebar:
-- **Admin** — Full access: add, edit, delete transactions
-- **Viewer** — Read-only: all data visible, no mutations
+## Role-Based UI
+ 
+Switch roles using the **dropdown in the sidebar** — no backend, purely frontend.
+ 
+| Action | Admin | Viewer |
+|---|---|---|
+| View data | ✅ | ✅ |
+| Export data | ✅ | ✅ |
+| Add transaction | ✅ | ❌ |
+| Edit transaction | ✅ | ❌ |
+| Delete transaction | ✅ | ❌ |
+ 
+In Viewer mode: add/edit/delete buttons are hidden, the Actions column disappears entirely, and the modal cannot be opened.
 
 ### Bonus Features
 - 🌙 **Dark / Light mode** — Fully themed with CSS variables, persisted
